@@ -1,0 +1,104 @@
+.tender {
+  color: @text-light;
+  background-color: @main-theme;
+}
+
+.tender__wrapper {
+  margin: 0 auto 0 auto;
+  padding-top: 32px;
+  padding-bottom: 55px;
+}
+
+.tender__title {
+  margin-bottom: 40px;
+}
+
+.tender__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tender__subtitle {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.tender__text {
+  margin: 0 0 40px 0;
+  line-height: 22px;
+}
+
+.tender__button {
+  margin-bottom: 12px;
+}
+
+@media (min-width: @tablet-width) {
+  .tender__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("../img/tender-clock-tablet.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+
+  .tender__title {
+    margin-right: 208px;
+  }
+
+  .tender__list {
+    display: flex;
+  }
+
+  .tender__item {
+    width: 200px;
+    margin-right: 49px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  .tender__button {
+    margin-bottom: 0;
+  }
+
+  .tender__bonus {
+    margin-left: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tender__wrapper {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background-image: url("../img/tender-clock-desktop.png");
+    background-position: 575px bottom;
+  }
+
+  .tender__title {
+    margin-right: 460px;
+  }
+
+  .tender__list {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .tender__item {
+    margin-right: 90px;
+  }
+
+  .tender__text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .tender__bonus {
+    margin-left: 27px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

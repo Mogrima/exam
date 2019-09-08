@@ -1,0 +1,19 @@
+.container {
+  width: @mobile-box;
+  margin: 0 auto 60px auto;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    box-sizing: border-box;
+    width: @tablet-width;
+    padding-left: 55px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: @desktop-width;
+    padding-left: 165px;
+  }
+}
