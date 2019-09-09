@@ -1,0 +1,67 @@
+.procedure {
+  overflow: hidden;
+}
+
+.procedure__title {
+  max-width: 247px;
+  margin-bottom: 42px;
+}
+
+.procedure__list {
+  display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    position: relative;
+    left: 0px;
+    width: 700px;
+    transition: left .5s ease-in-out;
+}
+
+.procedure__item {
+  position: relative;
+  width: 210px;
+  margin-right: 35px;
+  margin-bottom: 20px;
+  padding-top: 55px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+  }
+
+  &--request::before {
+    width: 39px;
+    height: 36px;
+    background-image: url("../img/icon/mail.svg");
+  }
+
+  &--blank::before {
+    width: 38px;
+    height: 38px;
+    background-image: url("../img/icon/blank.svg");
+  }
+
+  &--wait::before {
+    width: 41px;
+    height: 41px;
+    background-image: url("../img/icon/home.svg");
+  }
+}
+
+.procedure__subttile {
+  margin: 0;
+  margin-bottom: 32px;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+.procedure__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+}
